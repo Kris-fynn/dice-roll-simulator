@@ -6,13 +6,28 @@ body{
 
 h1{
     font-size: 3rem;
-    margin-top: 3rem;
-
+    margin-top: 2rem;
 }
 
 .dice{
     font-size: 7rem;
     margin: 5px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation{
+    animation-name: roll;
+}
+
+@keyframes roll{
+    0%{
+        transform: rotateX(0deg) rotateX(0deg);
+    }
+
+    100%{
+        transform: rotate(720deg) rotate(720deg);
+    }
 }
 
 button{
@@ -24,7 +39,6 @@ button{
     border-radius: 1rem;
     cursor: pointer;
     transition: background-color .3s ease;
-
 }
 
 button:hover{
@@ -34,10 +48,8 @@ button:hover{
 ul{
     list-style: none;
     padding: 0;
-    
     max-width: 600px;
     margin: 2rem auto;
-
 }
 
 li{
@@ -54,5 +66,5 @@ li{
 
 li span{
     font-size: 3rem;
-    margin:1rem;
+    margin: 1rem;
 }
