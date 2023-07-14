@@ -22,11 +22,11 @@ h1{
 
 @keyframes roll{
     0%{
-        transform: rotateX(0deg) rotateX(0deg);
+        transform: rotateY(0deg) rotateX(0deg);
     }
 
     100%{
-        transform: rotate(720deg) rotate(720deg);
+        transform: rotateY(720deg) rotateX(720deg);
     }
 }
 
@@ -66,5 +66,5 @@ li{
 
 li span{
     font-size: 3rem;
-    margin: 1rem;
+    margin-right: 1rem;
 }
